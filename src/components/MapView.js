@@ -81,7 +81,7 @@ export default function MapView() {
   const [showZoning, setShowZoning] = useState(false);
 
   // Historical basemap state (null = none active)
-  const [activeHistory, setActiveHistory] = useState(null);
+  const [activeHistory, setActiveHistory] = useState('liugong1939');
   const [historyOpacities, setHistoryOpacities] = useState(
     HISTORICAL_MAPS.reduce((acc, hm) => ({ ...acc, [hm.id]: 0.7 }), {})
   );
